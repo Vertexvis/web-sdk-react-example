@@ -16,6 +16,7 @@ export function App({ streamKey, env }: Props): JSX.Element {
         <VertexViewer
           src={`urn:vertexvis:stream-key:${streamKey}`}
           configEnv={env}
+          onTap={(ev) => console.log('tapped', ev.detail)}
         />
       </div>
     </div>
